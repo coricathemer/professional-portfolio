@@ -8,6 +8,7 @@ body{
     display: flexbox;
 }
 
+/* header section start */
 .header  {
     padding: 20px 35px;
     margin: 7px 0;
@@ -24,6 +25,7 @@ body{
 .header a {
     text-decoration: none;
     color: white;
+    text-shadow: 3px 3px rgba(18, 117, 230, 0.788);
 }
 
 .header nav {
@@ -31,8 +33,11 @@ body{
     margin: 7px 0;
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-end;
 }
+/* header section end */
 
+/* nav section start */
 .nav ul li {
     display: block; 
     padding: 10px;
@@ -40,55 +45,65 @@ body{
 }
 
 li a:hover {
-    background-color: teal;
+    background-color: #c0b0b0ab
+}
+/* nav section ends */
+
+/* about me section begins */
+.about-section {
+    text-align: left;
 }
 
-.hero {
-    /* background-image: url('../images/DSC02377.JPG');
-    height: 450px;
-    width: 50%;
-    background-size: cover;
-    background-position: center;
-    display: flex; */
-  }
-
-#about-me {
-    background-color: darkgray;
-    /* float:left; */
-    margin: 7px 0;
-    /* display: inline; */
-    
+.About-Me {
+    margin: 0px auto 0px auto;
+    overflow: auto;
 }
 
-.aboutme {
-    color: purple;
-    text-align: right;
-    
+.about-section img {
+    width: 15%;
+    float: right;
+    /* background-size: cover; */
 }
 
-.headshot {
-    /* width: 100%;
-    min-height: 300px;
-    background-size: cover;
+.about-section p {
+    /* display: flex; */
+    padding: 0px;
+    float: left;
+    width: 100%;
+}
+/* end about me section */
+
+.text-left {
+    text-align: left;
+}
+
+h2{
+    background-color: thistle;
+    text-align: left;
     display: flex;
-    padding: 15px;
-    align-items: flex-end;
-    position: relative;
-    overflow: hidden; */
-    /* background-size: cover;
-    padding: 25px;
-    height: 5px;
-    width: 10%; */
+    justify-content: left;
+    flex-wrap: wrap;
 }
 
-
-
-#work {
-    background-color: palevioletred;
-    margin: 7px 0;
+/* work section begin */
+#work-grid-container {
+    max-width: 940px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    grid-gap; 10px;
 }
 
-#contact-me {
-    background-color: darkgreen;
-    margin: 7px 0;
+.work-grid-item {
+    width: 80%;
+    height: auto;
+    background-color: orange;
+    border: solid;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 }
+/* work section end */
