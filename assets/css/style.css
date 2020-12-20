@@ -91,11 +91,11 @@ h2{
 }
 
 /* grid section begin */
-#grid-container {
+.grid-container {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-    grid-gap: 100px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 10px;
     grid-auto-flow: dense;
     flex-wrap: wrap;
 }
@@ -111,8 +111,8 @@ h2{
 }
 
 .grid-item:nth-child(3n) {
-    /* grid-column: span 3; */
-    /* grid-row: span 2; */
+    grid-column: span 3;
+    grid-row: span 2;
   }
 
   .box-1 {
