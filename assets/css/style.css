@@ -1,23 +1,44 @@
 *{
-    color:brown
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.nav {
-    background-color: chartreuse;
+body{
+    display: flexbox;
+}
+
+.header  {
+    background-color: coral;
+    padding: 20px 35px;
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.header nav {
+    float: right;
+    margin: 7px 0;
+}
+
+.nav ul li {
+    display: inline;
+
 }
 
 .hero {
     background-image: url('../images/DSC02377.JPG');
-    height: 650px;
+    height: 450px;
+    width: 50%;
     background-size: cover;
     background-position: center;
-    position: relative;
+    display: flex;
   }
 
-.headshot {
-    background-image: url('../images/headshot.jpg');
-    height: 500px;
-    background-size: cover;
-    background-position: center;
-    position: relative;
+#about-me {
+    background-color: darkgray;
+    float:left;
+    margin: 7px 0;
+    display: inline;
 }
