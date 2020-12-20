@@ -9,36 +9,86 @@ body{
 }
 
 .header  {
-    background-color: coral;
     padding: 20px 35px;
+    margin: 7px 0;
+    background-image: url('../images/DSC02377.JPG');
+    height: 350px;
+    width: auto;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
 }
 
 .header a {
     text-decoration: none;
+    color: white;
 }
 
 .header nav {
     float: right;
     margin: 7px 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .nav ul li {
-    display: inline;
+    display: block; 
+    padding: 10px;
+    float: right;
+}
 
+li a:hover {
+    background-color: teal;
 }
 
 .hero {
-    background-image: url('../images/DSC02377.JPG');
+    /* background-image: url('../images/DSC02377.JPG');
     height: 450px;
     width: 50%;
     background-size: cover;
     background-position: center;
-    display: flex;
+    display: flex; */
   }
 
 #about-me {
     background-color: darkgray;
-    float:left;
+    /* float:left; */
     margin: 7px 0;
-    display: inline;
+    /* display: inline; */
+    
+}
+
+.aboutme {
+    color: purple;
+    text-align: right;
+    
+}
+
+.headshot {
+    /* width: 100%;
+    min-height: 300px;
+    background-size: cover;
+    display: flex;
+    padding: 15px;
+    align-items: flex-end;
+    position: relative;
+    overflow: hidden; */
+    /* background-size: cover;
+    padding: 25px;
+    height: 5px;
+    width: 10%; */
+}
+
+
+
+#work {
+    background-color: palevioletred;
+    margin: 7px 0;
+}
+
+#contact-me {
+    background-color: darkgreen;
+    margin: 7px 0;
 }
