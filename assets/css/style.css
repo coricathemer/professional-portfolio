@@ -10,7 +10,7 @@ body {
 }
 
 /* header section start */
-.header  {
+.header {
     padding: 20px 35px;
     margin: 7px 0;
     background-image: url('../images/DSC02377.JPG');
@@ -30,10 +30,6 @@ body {
 }
 
 .header nav {
-    /* float: right; */
-    /* margin: 7px 0; */
-    /* display: flex; */
-    /* flex-wrap: wrap; */
     justify-content: flex-end;
 }
 /* header section end */
@@ -64,16 +60,10 @@ li a:hover {
 .about-section img {
     width: 15%;
     float: right;
-    /* background-size: cover; */
 }
 
 .about-section p {
     display: flex;
-    /* padding: 0px; */
-    /* float
-    +93: left; */
-    /* width: 100%; */
-    /* justify-content: center; */
 }
 
 .about-me-title {
@@ -87,7 +77,7 @@ li a:hover {
     justify-content: space-around;
 }
 
-.contact-grid{
+.contact-grid {
     display: inline;
     align-self: center;
     text-decoration: none;
@@ -98,24 +88,18 @@ li a:hover {
     text-align: left;
 }
 
-h2{
+h2 {
     border-right: 3px solid;
     margin: 5px 0px 10px 10px;
     padding: 5px 10px 10px 10px;
-    /* left: 0; */
-    /* flex: 1 20%; */
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
     background-color: thistle;
     color: ivory;
-    /* text-align: left; */
-    /* display: flex; */
-    /* justify-content: left; */
-    /* flex-wrap: wrap; */
 }
 
-.hero-title{
+.hero-title {
     text-align: right;
     background-color: lavenderblush;
 }
@@ -208,8 +192,6 @@ h2{
 
 .contact {
     display: flex; 
-    /* padding: 10px; */
-    /* float: left; */
     justify-content: flex-start;
 }
 
@@ -219,6 +201,3 @@ h2{
     justify-content: center;
     text-decoration: none;
 }
-/* .grid-item-box-6 {
-    
-} */
