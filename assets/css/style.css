@@ -1,9 +1,7 @@
 
 *,
 *:before,
-*:after {
-    /* margin: 0;
-    padding: 0; */
+*:after, {
     box-sizing: inherit;
 }
 
@@ -33,9 +31,9 @@ body {
 
 .header nav {
     /* float: right; */
-    margin: 7px 0;
-    display: flex;
-    flex-wrap: wrap;
+    /* margin: 7px 0; */
+    /* display: flex; */
+    /* flex-wrap: wrap; */
     justify-content: flex-end;
 }
 /* header section end */
@@ -78,13 +76,21 @@ li a:hover {
     /* justify-content: center; */
 }
 
-.about-me-title{
+.about-me-title {
     float:left
 }
 
-.contact-info{
-    float: left;
-    padding: 0;
+.contact-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.contact-grid{
+    display: inline;
+    align-self: center;
+    text-decoration: none;
 }
 /* end about me section */
 
@@ -109,13 +115,6 @@ h2{
     /* flex-wrap: wrap; */
 }
 
-h2 {
-    /* display: flex; */
-    /* color: ivory; */
-    /* justify-content: flex-start; */
-}
-
-
 .hero-title{
     text-align: right;
     background-color: lavenderblush;
@@ -123,26 +122,82 @@ h2 {
 
 /* grid section begin */
 .work-grid {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    grid-gap: 10px;
+    grid-gap: 15px;
     grid-auto-flow: dense;
-    flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
 }
 
-.grid-item {
+#main-grid {
+    background-color: lightblue;
+}
+
+.item-1 {
     display: flex;
     justify-content: center;
     align-items: center;
     border: 5px solid rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     font-size: 35px;
-    background-color: aquamarine;
+    background-color: rgba(160, 248, 219, 0.603);
 }
 
-.grid-item:nth-child(3n) {
-    grid-column: span 4;
+.item-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    font-size: 35px;
+    background-color: rgba(33, 143, 106, 0.486);
+}
+
+.item-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    font-size: 35px;
+    background-image: url("..//images/digital-marketing-meeting.jpg");
+}
+
+.item-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    font-size: 35px;
+    background-color: rgba(147, 197, 180, 0.719);
+}
+
+.item-5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    font-size: 35px;
+    background-color: rgba(2, 90, 61, 0.555);
+}
+
+.item-6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    font-size: 35px;
+    background-image: url("../images/hero-bg.jpg")
+}
+
+.work:nth-child(3n) {
+    grid-column: span 3;
     grid-row: span 2;
   }
 /* grid section end */
@@ -164,3 +219,6 @@ h2 {
     justify-content: center;
     text-decoration: none;
 }
+/* .grid-item-box-6 {
+    
+} */
