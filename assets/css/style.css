@@ -105,82 +105,21 @@ h2 {
 }
 
 /* grid section begin */
-.work-grid {
-    width: 100%;
+.work-grid-container {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    grid-gap: 15px;
-    grid-auto-flow: dense;
-    position: relative;
-    overflow: hidden;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 2fr);
 }
 
-#main-grid {
-    background-color: lightblue;
+.work-grid-item {
+  height: 50px;
+  width: 200px;
+  background-color: rgba(109, 252, 252, 0.836);
+  border: solid;
+  color: rgba(0, 0, 0, 0.116);
 }
 
-.item-1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 5px solid rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    font-size: 35px;
-    background-color: rgba(160, 248, 219, 0.603);
-}
-
-.item-2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 5px solid rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    font-size: 35px;
-    background-color: rgba(33, 143, 106, 0.486);
-}
-
-.item-3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 5px solid rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    font-size: 35px;
-    background-image: url("..//images/digital-marketing-meeting.jpg");
-}
-
-.item-4 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 5px solid rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    font-size: 35px;
-    background-color: rgba(147, 197, 180, 0.719);
-}
-
-.item-5 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 5px solid rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    font-size: 35px;
-    background-color: rgba(2, 90, 61, 0.555);
-}
-
-.item-6 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 5px solid rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    font-size: 35px;
-    background-image: url("../images/hero-bg.jpg")
-}
-
-.work:nth-child(3n) {
+.work-grid-item:nth-child(3n) {
     grid-column: span 3;
     grid-row: span 2;
   }
